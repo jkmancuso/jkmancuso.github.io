@@ -66,10 +66,130 @@
         <div><select><option>test</option></select></div>
     </div>
 
+    <div class="red">NO NOT MAKE AN ENTRY HERE<br>UNLESS STUDENT IS ORDERING GROUP</div>
 </div>
-	</body>
+
+<br>
+<div class="small-bold-italics">Section Order Information</div>
+<br>
+
+<div class="container-section">
+
+  <div></div>
+  <div class="section-woodwind">Woodwind Section</div>
+  <div></div>
+
+  <div></div>
+  <div class="section-brass">Brass Section</div>
+  <div></div>
+
+  <div>Qty</div>
+  <div>Instrument</div>
+  <div>Position</div>
+  <div>Picture #</div>
+
+  <div>Qty</div>
+  <div>Instrument</div>
+  <div>Position</div>
+  <div>Picture #</div>
+
+  <div><input type="text" size="2" maxlength="2"></div>
+  <div><select></select></div>
+  <div><select></select></div>
+  <div><select></select></div>
+
+  <div><input type="text" size="2" maxlength="2"></div>
+  <div><select></select></div>
+  <div><select></select></div>
+  <div><select></select></div>
+
+  <div></div>
+  <div class="section-percussion">Percussion Section</div>
+  <div></div>
+
+  <div></div>
+  <div class="section-strings">Strings Section</div>
+  <div></div>
+  
+  <div>Qty</div>
+  <div>Instrument</div>
+  <div>Position</div>
+  <div>Picture #</div>
+
+  <div>Qty</div>
+  <div>Instrument</div>
+  <div>Position</div>
+  <div>Picture #</div>
+
+  <div><input type="text" size="2" maxlength="2"></div>
+  <div><select></select></div>
+  <div><select></select></div>
+  <div><select></select></div>
+
+  <div><input type="text" size="2" maxlength="2"></div>
+  <div><select></select></div>
+  <div><select></select></div>
+  <div><select></select></div>
+
+  <div></div>
+  <div class="section-voice">Voice Section</div>
+  <div></div>
+
+  <div class="section-accounting">
+    Accounting Information<br><br>
+    <div class="container-accounting">
+      <div>Payment Method</div>
+      <div><input type="text"  size="5" maxlength="5"></div>
+      <div>Check Num</div>
+      <div><input type="text"  size="5" maxlength="5"></div>
+
+      <div>Total Paid</div>
+      <div><input type="text"  size="5" maxlength="5"></div>
+      <div></div>
+      <div></div>
+
+    </div>
+    
+  </div>
+  
+  <div>Qty</div>
+  <div>Instrument</div>
+  <div>Position</div>
+  <div>Picture #</div>
+
+
+  <div><input type="text" size="2" maxlength="2"></div>
+  <div><select></select></div>
+  <div><select></select></div>
+  <div><select></select></div>
+
+</div>
+
+<br>
+<div class="container-end">
+  <div>Date Created On</div>
+  <div><input type="text" class="purple"></div>
+  <div>Number of pictures in this order</div>
+  <div><input type="text" class="purple" size="2" maxlength="2"></div>
+  <div><button>Update/Add</button></div>
+  <div></div>
+</div>
+
+</body>
 
 <style>
+
+.container-end {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 25%;
+}
+
+
+.container-end > div {
+    padding: 2px;
+  
+ }
 
 .group-photo{
     padding: 2px;
@@ -83,6 +203,10 @@ body{
     font-size: 8pt
 }
 
+.red{
+  color: red;
+}
+
 .container-group {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -93,6 +217,60 @@ body{
     margin: 2px;
  }
 
+ .container-section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  width: 40%;
+}
+
+.container-section > div {
+    padding: 5px;
+ }
+
+ .section-woodwind{
+  grid-column: 2/ span 2;
+  color: #00FF00;
+ }
+
+ .section-brass{
+  grid-column: 6/ span 2;
+  color: #0000AA;
+ }
+
+ .section-percussion{
+  grid-column: 2/ span 2;
+  color: #CC0099;
+ }
+
+ .section-strings{
+  grid-column: 6/ span 2;
+  color: #008000;
+ }
+
+.section-voice{
+  grid-column: 2/ span 2;
+  color: #00CCCC;
+ }
+
+
+ .section-accounting{
+  grid-column: 5/ span 4;
+  grid-row: 7/ span 3;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: yellow;
+ }
+
+ .container-accounting{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ }
+
+ .container-accounting > div {
+    padding: 2px;
+    
+ }
 
 .container-header {
   display: flex;
